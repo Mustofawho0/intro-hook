@@ -10,7 +10,8 @@ export default function Exercise() {
     if (valuetype.length <= 15) {
       setInputText(valuetype);
     } else {
-      setError("Max value 15 men!");
+      alert("Max 15 value cuy~");
+      // setError("Max value 15 men!");
     }
   }
 

@@ -9,6 +9,8 @@ import Exercise from "./page/exercise/index.jsx";
 import Posts from "./page/posts/index.jsx";
 import UseMemoComponents from "./page/UseMemo/index.jsx";
 import UseContextComponent from "./page/UseContext/index.jsx";
+import UseReducerComponent from "./page/UseReducer/index.jsx";
+import UseCallbackComponents from "./page/UseCallback/index.jsx";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +39,14 @@ const router = createBrowserRouter([
       {
         path: "/context",
         element: <UseContextComponent />,
+      },
+      {
+        path: "/reducer",
+        element: <UseReducerComponent />,
+      },
+      {
+        path: "/callback",
+        element: <UseCallbackComponents />,
       },
     ],
   },
