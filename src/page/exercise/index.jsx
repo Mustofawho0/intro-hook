@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Exercise() {
   const [inputText, setInputText] = useState();
@@ -7,12 +7,16 @@ export default function Exercise() {
   function onSetInput(a) {
     const valuetype = a.target.value;
 
-    if (valuetype.length >= 15) {
-      setError("Min value 15 men!");
-    } else {
+    if (valuetype.length <= 15) {
       setInputText(valuetype);
+    } else {
+      setError("Max value 15 men!");
     }
   }
+
+  useEffect(() => {
+    console.log(inputText);
+  }, [inputText]);
 
   return (
     <>

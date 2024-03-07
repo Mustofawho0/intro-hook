@@ -1,9 +1,16 @@
 import React from "react";
 import { Link, Router } from "react-router-dom";
 
+// Lifecycle Method
+// ComponentDidMount    : Method yang akan dijalankan ketika pertama kali halaman di muat
+// ComponentDidUpdate   : Method yang akan dijalankan ketika terjadi perubahan state
+// ComponentWillUnmount : Method yang akan dijalankan ketika halaman akan dihapus
+
+// State  : Menyimpan data di dalam component React
+
 let hobby = "makan";
 
-class Home extends React.Component  {
+class Home extends React.Component {
   constructor(props) {
     super(props);
 
@@ -12,16 +19,16 @@ class Home extends React.Component  {
     };
   }
 
-    // componentDidMount(){
-    //   alert('Component did mount Running!')
-    // }
+  // componentDidMount(){
+  //   alert('Component did mount Running!')
+  // }
 
   // componentWillUnmount() {
   //   alert(hobby);
   // }
 
   onUpdateUsername = () => {
-    this.setState({username : 'mustofa'})
+    this.setState({ username: "mustofa" });
     hobby = "Minum";
   };
   render() {

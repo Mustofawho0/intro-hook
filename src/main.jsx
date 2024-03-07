@@ -7,6 +7,8 @@ import Home from "./page/home/index.jsx";
 import Login from "./page/login/index.jsx";
 import Exercise from "./page/exercise/index.jsx";
 import Posts from "./page/posts/index.jsx";
+import UseMemoComponents from "./page/UseMemo/index.jsx";
+import UseContextComponent from "./page/UseContext/index.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
       {
         path: "/post",
         element: <Posts />,
+      },
+      {
+        path: "/memo",
+        element: <UseMemoComponents />,
+      },
+      {
+        path: "/context",
+        element: <UseContextComponent />,
       },
     ],
   },
